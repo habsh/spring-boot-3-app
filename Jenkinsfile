@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    tools {
+        maven "MAVEN"
+        jdk "JDK"
+    }
+
     stages {
        stage('Git Checkout') {
             steps {
@@ -10,14 +15,20 @@ pipeline {
                 }
             }
         }
+        stage('Initialize'){
+            steps{
+                echo "PATH = ${M2_HOME}/bin;${PATH}"
+                echo "M2_HOME = ${M2_HOME}"
+            }
+        }
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                bat 'mvn -B -DskipTests clean package'
             }
         }
         stage('Test') { 
             steps {
-                sh 'mvn test' 
+                bat 'mvn test' 
             }
             post {
                 always {
