@@ -5,8 +5,8 @@ pipeline {
             steps {
                 script {
                     git branch: 'master',
-                        credentialsId: 'Credential ID',
-                        url: 'https://github.com/habsh/microservice1.git'
+                        credentialsId: 'habgithub',
+                        url: 'https://github.com/habsh/spring-boot-3-app.git'
                 }
             }
         }
