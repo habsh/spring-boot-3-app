@@ -36,5 +36,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                bat 'java -jar ./target/spring-boot-3-app-1.0.0-SNAPSHOT.jar'
+            }
+        }
     }
 }
