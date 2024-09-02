@@ -1,0 +1,7 @@
+﻿Date	Time	Severity	PID	TID	Function	Message
+02-09-2024	10:40:48.865	 INFO	 24560	 18500	DllMain	"DLL_PROCESS_ATTACH Mon Aug 19 22:32:08 2024 11.3.2416.6"
+02-09-2024	10:40:48.866	 INFO	 24560	  3116	LateInitialization	"Intialization..."
+02-09-2024	10:40:48.867	 INFO	 24560	  3116	LateInitialization	"Exe = C:\Users\arnabm\AppData\Local\Programs\Git\usr\bin\bash.exe"
+02-09-2024	10:40:48.867	 INFO	 24560	  3116	LateInitialization	"IsExplorer = 0"
+02-09-2024	10:40:48.868	 INFO	 24560	  3116	Edlp::Path::InitializeExcludedPathPatterns	"Windows drive = C:"
+02-09-2024	10:40:48.869	 INFO	 24560	  3116	LateInitialization	"Intialization finished"
